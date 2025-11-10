@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './firebase';
 import Auth from './components/Auth';
@@ -55,16 +55,16 @@ function App() {
         <nav>
           <h1>E-Commerce Store</h1>
           <div>
-            <a href="/">Home</a>
-            <a href="/cart">Cart ({cart.length})</a>
+            <Link to="/">Home</Link>
+            <Link to="/cart">Cart ({cart.length})</Link>
             {user ? (
               <>
                 <span>Welcome, {user.email}</span>
                 <button onClick={() => auth.signOut()}>Logout</button>
-                {user.email === 'admin@example.com' && <a href="/admin">Admin</a>}
+                {user.email === 'admin@example.com' && <Link to="/admin">Admin</Link>}
               </>
             ) : (
-              <a href="/auth">Login</a>
+              <Link to="/auth">Login</Link>
             )}
           </div>
         </nav>

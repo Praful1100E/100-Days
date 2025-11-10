@@ -32,5 +32,5 @@
 - [x] Set up React Router for navigation between pages
 
 ## Step 10: Testing and deployment
-- Test all features locally
+- [x] Test all features locally
 - Deploy to Firebase Hosting or similar
