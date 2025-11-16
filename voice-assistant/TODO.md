@@ -7,5 +7,6 @@
 - [x] Create basic command/response logic (e.g., greet on "hello")
 - [x] Design beautiful UI in App.css: centered layout, gradient background, animated microphone button
 - [x] Add error handling for browser compatibility
-- [ ] Test voice input/output functionality
+- [x] Test voice input/output functionality
 - [ ] Verify UI responsiveness
+in
